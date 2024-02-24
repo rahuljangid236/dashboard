@@ -1,0 +1,116 @@
+.side-bar-sec{
+    margin: 20px;
+    max-width: 20%;
+    min-width: 240px;
+    max-height: 95%;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 16px;
+    padding: 24px 32px;
+    position: sticky;
+    top: 20px;
+
+    .logo-div{
+        height: 9%;
+        .logo-img{
+            height: 100%;
+            max-width: 100%;
+        }
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: space-between;
+        height: 90%;
+        gap: 35px;
+
+        .upper-content{
+            width: 100%;
+            .upper-btns{
+                padding: 16px 20px;
+                font-size: 14px;
+                line-height: 17px;
+                font-family: 'roboto_reg';
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                color: #53545C;
+                text-decoration: none;
+
+                .span-img{
+                    path{
+                        stroke: #53545C;
+                    }
+                }
+                &.active{
+                    border-radius: 10px;
+                    color: #ffffff;
+                    background-color: #066AC9;
+                    margin: 15px 0;
+                    .span-img{
+                        svg{
+                            path{
+                                stroke: #fff;
+                            }
+                        }
+                    }
+                }
+                .pop-up-num{
+                    background-color: #FFCC91;
+                    border-radius: 50%;
+                    font-size: 12px;
+                    line-height: 14px;
+                    height: 24px; aspect-ratio: 1;
+                    font-family: 'roboto_reg';
+                    color: #1C1D22;
+                    display: grid;place-items: center;
+                }
+            }
+        }
+        .lower-content{
+            width: 100%;
+            .lower-btns{
+                padding: 12px 16px;
+                font-size: 14px;
+                line-height: 17px;
+                font-family: 'roboto_reg';
+                border-radius: 16px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+                text-decoration: none;
+
+            }
+            .contact-btn{
+                background-color: rgba(94, 99, 102, 0.1);
+                color: #1C1D22;
+            }
+            // .gift-btn{
+            //     background-color: rgba(255, 204, 145, 0.2);
+
+            //     .gift-btn-p{
+            //         margin-top:16px ;
+            //         font-size: 12px;
+            //         line-height: 14px;
+            //         font-family: 'roboto_med';
+            //         color: #6E7079;
+            //         display: flex;
+            //         align-items: center;
+
+            //         &::after{
+            //             content: "";
+            //             border: solid #6E7079;
+            //             padding: 5px;
+            //             padding: 3px;
+            //             border-width: 2px 2px 0 0;
+            //             transform: rotate(45deg);
+            //         }
+            //     }
+            // }
+            .logout-btn{
+                justify-content: center;
+                color: #CC5F5F;
+            }
+        }
+    }
+}
