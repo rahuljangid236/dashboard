@@ -1,10 +1,12 @@
 import { Roboto } from "next/font/google";
-// import "./globals.css";
-import './styles/global.scss';
+import "./globals.css";
+import "./styles/global.scss";
+import Sidebar from "./ui/dashboard/sidebar/Sidebar";
 
-const roboto = Roboto({ 
-  weight: ['400','500', '700','900'],
-  subsets: ["latin"] });
+const roboto = Roboto({
+  weight: ["400", "500", "700", "900"],
+  subsets: ["latin"],
+});
 
 export const metadata = {
   title: "Gradding Dashboard",
@@ -14,7 +16,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Sidebar />
+        {children}
+      </body>
     </html>
   );
 }
