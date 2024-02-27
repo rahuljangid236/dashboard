@@ -13,6 +13,7 @@ const menuItems = [
       <path opacity="0.4" d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z" fill="white" />
       <path fillRule="evenodd" clipRule="evenodd" d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z" fill="white" />
     </svg>,
+    notification: "",
   },
   {
     title: "Recorded Videos",
@@ -24,7 +25,84 @@ const menuItems = [
       <path d="M15.4805 2.11035V6.52035" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
       <path d="M9.75 14.4501V13.2501C9.75 11.7101 10.84 11.0801 12.17 11.8501L13.21 12.4501L14.25 13.0501C15.58 13.8201 15.58 15.0801 14.25 15.8501L13.21 16.4501L12.17 17.0501C10.84 17.8201 9.75 17.1901 9.75 15.6501V14.4501V14.4501Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
     </svg>,
+    notification: "3",
   },
+  {
+    title: "Mock Tests",
+    path: "/dashboard/mock-test",
+    icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.3701 8.87988H17.6201" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6.37988 8.87988L7.12988 9.62988L9.37988 7.37988" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M12.3701 15.8799H17.6201" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6.37988 15.8799L7.12988 16.6299L9.37988 14.3799" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>,
+    notification: "2",
+  },
+  {
+    title: "Practice Tests",
+    path: "/dashboard/practice-test",
+    icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M7 13H15" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M7 17H12" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16 3.5C19.33 3.68 21 4.95 21 9.65V15.83C21 19.95 20 22.01 15 22.01H9C4 22.01 3 19.95 3 15.83V9.65C3 4.95 4.67 3.69 8 3.5H16Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>,
+    notification: "4",
+  },
+  {
+    title: "Study Materials",
+    path: "/dashboard/study-materials",
+    icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M3.5 18V7C3.5 3 4.5 2 8.5 2H15.5C19.5 2 20.5 3 20.5 7V17C20.5 17.14 20.5 17.28 20.49 17.42" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6.35 15H20.5V18.5C20.5 20.43 18.93 22 17 22H7C5.07 22 3.5 20.43 3.5 18.5V17.85C3.5 16.28 4.78 15 6.35 15Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8 7H16" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8 10.5H13" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>,
+    notification: "1",
+  },
+  {
+    title: "Attendance",
+    path: "/dashboard/attandance",
+    icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M3.5 9.08984H20.5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M11.9955 13.7002H12.0045" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.29431 13.7002H8.30329" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.29431 16.7002H8.30329" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>,
+    notification: "",
+  },
+  {
+    title: "Plans",
+    path: "/dashboard/plans",
+    icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M18 7V17C18 17.62 17.98 18.17 17.91 18.66C17.62 21.29 16.38 22 13 22H11C7.62 22 6.38 21.29 6.09 18.66C6.02 18.17 6 17.62 6 17V7C6 6.38 6.02 5.83 6.09 5.34C6.38 2.71 7.62 2 11 2H13C16.38 2 17.62 2.71 17.91 5.34C17.98 5.83 18 6.38 18 7Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M6 17.0001C6 17.6201 6.02 18.1701 6.09 18.6601C5.95 18.6701 5.82 18.6701 5.67 18.6701H5.33C2.67 18.6701 2 18.0001 2 15.3301V8.67008C2 6.00008 2.67 5.33008 5.33 5.33008H5.67C5.82 5.33008 5.95 5.33008 6.09 5.34008C6.02 5.83008 6 6.38008 6 7.00008V17.0001Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M22.0002 8.67008V15.3301C22.0002 18.0001 21.3302 18.6701 18.6702 18.6701H18.3302C18.1802 18.6701 18.0502 18.6701 17.9102 18.6601C17.9802 18.1701 18.0002 17.6201 18.0002 17.0001V7.00008C18.0002 6.38008 17.9802 5.83008 17.9102 5.34008C18.0502 5.33008 18.1802 5.33008 18.3302 5.33008H18.6702C21.3302 5.33008 22.0002 6.00008 22.0002 8.67008Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>,
+    notification: "",
+  },
+  {
+    title: "Book My IELTS Exam",
+    path: "/dashboard/book-ielts-exam",
+    icon: <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M8 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M3.5 9.08984H20.5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M22 19C22 19.75 21.79 20.46 21.42 21.06C20.73 22.22 19.46 23 18 23C16.99 23 16.07 22.63 15.37 22C15.06 21.74 14.79 21.42 14.58 21.06C14.21 20.46 14 19.75 14 19C14 16.79 15.79 15 18 15C19.2 15 20.27 15.53 21 16.36C21.62 17.07 22 17.99 22 19Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M16.4404 18.9995L17.4304 19.9895L19.5604 18.0195" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M21 8.5V16.36C20.27 15.53 19.2 15 18 15C15.79 15 14 16.79 14 19C14 19.75 14.21 20.46 14.58 21.06C14.79 21.42 15.06 21.74 15.37 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M11.9955 13.7002H12.0045" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.29431 13.7002H8.30329" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+      <path d="M8.29431 16.7002H8.30329" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>,
+    notification: "",
+  },
+
 ];
 
 const Sidebar = () => {
@@ -44,126 +122,16 @@ const Sidebar = () => {
                   {item.icon}
                 </span>
                 {item.title}
+                {item.notification ? (
+                  <span className="pop-up-num">{item.notification}</span>
+                ) : (
+                  <span className="pop-up-num" style={{ display: 'none' }}>
+                    {item.notification}
+                  </span>
+                )}
               </Link>
             })
           }
-          {/* <ul>
-            <li>
-              {
-                menuItems.map((item) => {
-                  
-                  return <Link href={item.path} key={item.title}>{item.title}</Link>
-                })
-              }
-            </li>
-          </ul> */}
-          {/* <Link href="/dashboard" className={`upper-btns ${activeIndex === 0 ? 'active' : ''}`} onClick={() => handleClick(0)}>
-            <span className="span-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path opacity="0.4" d="M16.0756 2H19.4616C20.8639 2 22.0001 3.14585 22.0001 4.55996V7.97452C22.0001 9.38864 20.8639 10.5345 19.4616 10.5345H16.0756C14.6734 10.5345 13.5371 9.38864 13.5371 7.97452V4.55996C13.5371 3.14585 14.6734 2 16.0756 2Z" fill="white" />
-                <path fillRule="evenodd" clipRule="evenodd" d="M4.53852 2H7.92449C9.32676 2 10.463 3.14585 10.463 4.55996V7.97452C10.463 9.38864 9.32676 10.5345 7.92449 10.5345H4.53852C3.13626 10.5345 2 9.38864 2 7.97452V4.55996C2 3.14585 3.13626 2 4.53852 2ZM4.53852 13.4655H7.92449C9.32676 13.4655 10.463 14.6114 10.463 16.0255V19.44C10.463 20.8532 9.32676 22 7.92449 22H4.53852C3.13626 22 2 20.8532 2 19.44V16.0255C2 14.6114 3.13626 13.4655 4.53852 13.4655ZM19.4615 13.4655H16.0755C14.6732 13.4655 13.537 14.6114 13.537 16.0255V19.44C13.537 20.8532 14.6732 22 16.0755 22H19.4615C20.8637 22 22 20.8532 22 19.44V16.0255C22 14.6114 20.8637 13.4655 19.4615 13.4655Z" fill="white" />
-              </svg>
-            </span>
-            Dashboard
-          </Link>
-          <Link href="/dashboard/recordedVideo" className={`upper-btns ${activeIndex === 1 ? 'active' : ''}`} onClick={() => handleClick(1)}>
-            <span className="span-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22H15C20 22 22 20 22 15Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M2.51953 7.11035H21.4795" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8.51953 2.11035V6.97035" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M15.4805 2.11035V6.52035" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M9.75 14.4501V13.2501C9.75 11.7101 10.84 11.0801 12.17 11.8501L13.21 12.4501L14.25 13.0501C15.58 13.8201 15.58 15.0801 14.25 15.8501L13.21 16.4501L12.17 17.0501C10.84 17.8201 9.75 17.1901 9.75 15.6501V14.4501V14.4501Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            Recorded Videos
-            <span className="pop-up-num">
-              3
-            </span>
-          </Link>
-          <Link href="/dashboard/mock-test" className={`upper-btns ${activeIndex === 2 ? 'active' : ''}`} onClick={() => handleClick(2)}>
-            <span className="span-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M12.3701 8.87988H17.6201" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M6.37988 8.87988L7.12988 9.62988L9.37988 7.37988" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M12.3701 15.8799H17.6201" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M6.37988 15.8799L7.12988 16.6299L9.37988 14.3799" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            Mock Tests
-            <span className="pop-up-num">
-              36
-            </span>
-          </Link>
-          <Link href="javascript:;" className={`upper-btns ${activeIndex === 3 ? 'active' : ''}`} onClick={() => handleClick(3)}>
-            <span className="span-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M16 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M7 13H15" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M7 17H12" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M16 3.5C19.33 3.68 21 4.95 21 9.65V15.83C21 19.95 20 22.01 15 22.01H9C4 22.01 3 19.95 3 15.83V9.65C3 4.95 4.67 3.69 8 3.5H16Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            Practice Tests
-            <span className="pop-up-num">
-              3
-            </span>
-          </Link>
-          <Link href="javascript:;" className={`upper-btns ${activeIndex === 4 ? 'active' : ''}`} onClick={() => handleClick(4)}>
-            <span className="span-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M3.5 18V7C3.5 3 4.5 2 8.5 2H15.5C19.5 2 20.5 3 20.5 7V17C20.5 17.14 20.5 17.28 20.49 17.42" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M6.35 15H20.5V18.5C20.5 20.43 18.93 22 17 22H7C5.07 22 3.5 20.43 3.5 18.5V17.85C3.5 16.28 4.78 15 6.35 15Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8 7H16" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8 10.5H13" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            Study Materials
-            <span className="pop-up-num">
-              3
-            </span>
-          </Link>
-          <Link href="javascript:;" className={`upper-btns ${activeIndex === 5 ? 'active' : ''}`} onClick={() => handleClick(5)}>
-            <span className="span-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M16 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M3.5 9.08984H20.5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M21 8.5V17C21 20 19.5 22 16 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M11.9955 13.7002H12.0045" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8.29431 13.7002H8.30329" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8.29431 16.7002H8.30329" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            Attendance
-          </Link>
-          <Link href="javascript:;" className={`upper-btns ${activeIndex === 6 ? 'active' : ''}`} onClick={() => handleClick(6)}>
-            <span className="span-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18 7V17C18 17.62 17.98 18.17 17.91 18.66C17.62 21.29 16.38 22 13 22H11C7.62 22 6.38 21.29 6.09 18.66C6.02 18.17 6 17.62 6 17V7C6 6.38 6.02 5.83 6.09 5.34C6.38 2.71 7.62 2 11 2H13C16.38 2 17.62 2.71 17.91 5.34C17.98 5.83 18 6.38 18 7Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M6 17.0001C6 17.6201 6.02 18.1701 6.09 18.6601C5.95 18.6701 5.82 18.6701 5.67 18.6701H5.33C2.67 18.6701 2 18.0001 2 15.3301V8.67008C2 6.00008 2.67 5.33008 5.33 5.33008H5.67C5.82 5.33008 5.95 5.33008 6.09 5.34008C6.02 5.83008 6 6.38008 6 7.00008V17.0001Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M22.0002 8.67008V15.3301C22.0002 18.0001 21.3302 18.6701 18.6702 18.6701H18.3302C18.1802 18.6701 18.0502 18.6701 17.9102 18.6601C17.9802 18.1701 18.0002 17.6201 18.0002 17.0001V7.00008C18.0002 6.38008 17.9802 5.83008 17.9102 5.34008C18.0502 5.33008 18.1802 5.33008 18.3302 5.33008H18.6702C21.3302 5.33008 22.0002 6.00008 22.0002 8.67008Z" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            Plans
-          </Link>
-          <Link href="javascript:;" className={`upper-btns ${activeIndex === 7 ? 'active' : ''}`} onClick={() => handleClick(7)}>
-            <span className="span-img">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M16 2V5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M3.5 9.08984H20.5" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M22 19C22 19.75 21.79 20.46 21.42 21.06C20.73 22.22 19.46 23 18 23C16.99 23 16.07 22.63 15.37 22C15.06 21.74 14.79 21.42 14.58 21.06C14.21 20.46 14 19.75 14 19C14 16.79 15.79 15 18 15C19.2 15 20.27 15.53 21 16.36C21.62 17.07 22 17.99 22 19Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M16.4404 18.9995L17.4304 19.9895L19.5604 18.0195" stroke="#53545C" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M21 8.5V16.36C20.27 15.53 19.2 15 18 15C15.79 15 14 16.79 14 19C14 19.75 14.21 20.46 14.58 21.06C14.79 21.42 15.06 21.74 15.37 22H8C4.5 22 3 20 3 17V8.5C3 5.5 4.5 3.5 8 3.5H16C19.5 3.5 21 5.5 21 8.5Z" stroke="#53545C" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M11.9955 13.7002H12.0045" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8.29431 13.7002H8.30329" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                <path d="M8.29431 16.7002H8.30329" stroke="#53545C" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-              </svg>
-            </span>
-            Book My IELTS Exam </Link> */}
         </div>
         <div className="lower-content">
           <a href="/" className="lower-btns contact-btn">
