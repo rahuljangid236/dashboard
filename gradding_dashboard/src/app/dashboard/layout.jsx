@@ -1,20 +1,20 @@
 import React from 'react'
-import Navbar from "../ui/dashboard/navbar/Navbar"
-import Sidebar from "../ui/dashboard/sidebar/Sidebar"
+import Sidebar from '../ui/dashboard/sidebar/Sidebar'
+import Navbar from '../ui/dashboard/navbar/Navbar'
+import "../styles/dashboard.scss";
 
-
-const Layout = ({children}) => {
-  return (
-    <div>
-        <div>
-            <Sidebar/>
+const layout = ({ children }) => {
+    return (
+        <div className='dashboard-container'>
+            <div className='sidebar-menu'>
+                <Sidebar />
+            </div>
+            <div className='right-side-content'>
+                <Navbar />
+                {children}
+            </div>
         </div>
-        <div>
-            <Navbar/>
-            {children}
-        </div>
-    </div>
-  )
+    )
 }
 
-export default Layout
+export default layout

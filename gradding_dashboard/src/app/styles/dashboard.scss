@@ -1,0 +1,9 @@
+.dashboard-container{
+    display: flex;
+    .sidebar-menu{
+        flex: 1;
+    }
+    .right-side-content{
+        flex: 4;
+    }
+}
