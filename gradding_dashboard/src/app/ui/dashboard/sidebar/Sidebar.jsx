@@ -110,7 +110,7 @@ const Sidebar = () => {
   return (
     <section className="side-bar-sec">
       <div className="logo-div">
-        <Image className="logo-img" src={gradding_logo} width={"161px"} height={"48px"} alt="logo" />
+        <Link href='https://gradding.com'><Image className="logo-img" src={gradding_logo} width={"161px"} height={"48px"} alt="logo" /></Link>
       </div>
       <div className="content">
         <div className="upper-content">
@@ -134,7 +134,7 @@ const Sidebar = () => {
           }
         </div>
         <div className="lower-content">
-          <a href="/" className="lower-btns contact-btn">
+          <Link href="/" className="lower-btns contact-btn">
             <span className="span-img">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M3 18V12C3 9.61305 3.94821 7.32387 5.63604 5.63604C7.32387 3.94821 9.61305 3 12 3C14.3869 3 16.6761 3.94821 18.364 5.63604C20.0518 7.32387 21 9.61305 21 12V18" stroke="black" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -142,7 +142,7 @@ const Sidebar = () => {
               </svg>
             </span>
             Contact Support
-          </a>
+          </Link>
           {/* <a href="javascript:;" className="lower-btns gift-btn">
             <span className="gift-span span-btn">
               <span className="span-img">
@@ -158,7 +158,7 @@ const Sidebar = () => {
             </span>
             <p className="gift-btn-p">Upgrade your account</p>
           </a> */}
-          <a href="/" className="lower-btns logout-btn">
+          <Link href="/" className="lower-btns logout-btn">
             <span className="span-img">
               <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.4" d="M0 4.447C0 1.996 2.03024 0 4.52453 0H9.48564C11.9748 0 14 1.99 14 4.437V15.553C14 18.005 11.9698 20 9.47445 20H4.51537C2.02515 20 0 18.01 0 15.563V14.623V4.447Z" fill="#CC5F5F" />
@@ -166,7 +166,7 @@ const Sidebar = () => {
               </svg>
             </span>
             Logout
-          </a>
+          </Link>
         </div>
       </div>
     </section>
